@@ -48,17 +48,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Interactive Pricing Logic ---
-    const packageData = {
-        basic: {
-            message: "Great for startups! Essential features to launch quickly."
-        },
-        standard: {
-            message: "Most Popular! Best balance of features and cost."
-        },
-        advanced: {
-            message: "Enterprise Grade. Full scalability and custom features."
-        }
-    };
+const packageData = {
+    basic: { message: "Startup package with Admin + Website." },
+    standard: { message: "Includes Customer App for online orders." },
+    advanced: { message: "Adds Delivery App and live tracking." },
+    premium: { message: "Full platform with Hosting & long-term support." }
+};
+
 
     const buttons = document.querySelectorAll('.select-plan-btn');
     const cards = document.querySelectorAll('.card');
@@ -185,5 +181,51 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Initialize with Standard Selected
-    updateSelection('standard');
+    updateSelection('advanced');
+
+
+    // --- Custom Quote Calculator Logic ---
+    const customCheckboxes = document.querySelectorAll('.service-checkbox');
+    const customTotalEl = document.getElementById('custom-total-price');
+    const selectAllBtn = document.getElementById('select-all-btn');
+    const deselectAllBtn = document.getElementById('deselect-all-btn');
+    const printQuoteBtn = document.getElementById('print-quote-btn');
+
+    function updateCustomTotal() {
+        let total = 0;
+        customCheckboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                total += parseInt(checkbox.value) || 0;
+            }
+        });
+        if (customTotalEl) {
+            customTotalEl.textContent = `₹${total.toLocaleString('en-IN')}`;
+        }
+    }
+
+    if (customCheckboxes.length > 0) {
+        customCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateCustomTotal);
+        });
+    }
+
+    if (selectAllBtn) {
+        selectAllBtn.addEventListener('click', () => {
+            customCheckboxes.forEach(checkbox => checkbox.checked = true);
+            updateCustomTotal();
+        });
+    }
+
+    if (deselectAllBtn) {
+        deselectAllBtn.addEventListener('click', () => {
+            customCheckboxes.forEach(checkbox => checkbox.checked = false);
+            updateCustomTotal();
+        });
+    }
+
+    if (printQuoteBtn) {
+        printQuoteBtn.addEventListener('click', () => {
+            window.print();
+        });
+    }
 });
