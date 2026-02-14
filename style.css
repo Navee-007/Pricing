@@ -281,3 +281,113 @@ section.visible {
 .text-muted {
     color: var(--text-muted) !important;
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Print Styles */
+@media print {
+    /* Hide everything by default */
+    body * {
+        visibility: hidden;
+    }
+    
+    /* Ensure background colors print */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Unhide the custom quote section */
+    #custom-quote, #custom-quote * {
+        visibility: visible;
+    }
+    
+    /* Position the quote section at the top */
+    #custom-quote {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 20px !important;
+    }
+
+    /* Hide non-printable elements within the section */
+    #select-all-btn, #deselect-all-btn, #print-quote-btn {
+        display: none !important;
+    }
+
+    /* Styling for print */
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    .card {
+        border: 1px solid #ccc !important;
+        background-color: white !important;
+        box-shadow: none !important;
+    }
+    
+    .card-header, .card-footer {
+        background-color: #f8f9fa !important;
+        color: black !important;
+        border-color: #ddd !important;
+    }
+    
+    .table {
+        color: black !important;
+    }
+    
+    .text-light {
+        color: black !important;
+    }
+    
+    .text-muted {
+        color: #666 !important;
+    }
+    
+    .text-highlight {
+        color: #000 !important;
+    }
+    
+    /* Hide unchecked rows */
+    tr:has(.service-checkbox:not(:checked)) {
+        display: none;
+    }
+
+    /* Hide the checkbox column itself in print */
+    .service-checkbox {
+        display: none;
+    }
+    
+    /* Reset layout */
+    .container {
+        max-width: 100% !important;
+    }
+}
+
+/* Custom Quote Scrollable Area */
+.custom-quote-scroll-container {
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: var(--primary-color) var(--dark-bg);
+    border: 1px solid #374151; /* Optional: adds a border around the scroll area */
+    border-radius: 8px;
+}
+
+.custom-quote-scroll-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-quote-scroll-container::-webkit-scrollbar-track {
+    background: var(--dark-bg);
+}
+
+.custom-quote-scroll-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
