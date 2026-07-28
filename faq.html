@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | Naveen Kumar K</title>
+    <meta name="description" content="Find answers to common questions about web development, custom software pricing, databases, and post-launch support.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563EB'/%3E%3Ctext x='50' y='70' font-family='Outfit,Arial,sans-serif' font-size='58' font-weight='700' fill='white' text-anchor='middle'%3EN.%3C/text%3E%3C/svg%3E">
+    <!-- Link preview for WhatsApp, LinkedIn and Upwork proposals -->
+    <!-- TODO: replace SITE_URL with your live domain once the site is hosted -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Frequently Asked Questions | Naveen Kumar K">
+    <meta property="og:description" content="Find answers to common questions about web development, custom software pricing, databases, and post-launch support.">
+    <meta property="og:image" content="SITE_URL/hero_tech.png">
+    <meta property="og:site_name" content="Naveen.Dev - Naveen Kumar K">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Frequently Asked Questions | Naveen Kumar K">
+    <meta name="twitter:description" content="Find answers to common questions about web development, custom software pricing, databases, and post-launch support.">
+    <meta name="author" content="Naveen Kumar K">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Page Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="spinner-custom"></div>
+    </div>
+
+    <!-- Navigation Bar with Mega Menu -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <div class="brand-logo fw-bold">N</div>
+                <span class="brand-name">Naveen.Dev</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1 gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown dropdown-mega">
+                        <a class="nav-link dropdown-toggle active" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu dropdown-mega-menu border-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Core Capabilities</div>
+                                    <a class="mega-menu-link" href="web-development.html"><i class="bi bi-laptop"></i> <div><strong>Web Development</strong><br><small class="text-muted">Business websites & e-commerce</small></div></a>
+                                    <a class="mega-menu-link" href="mobile-development.html"><i class="bi bi-phone"></i> <div><strong>Mobile Apps</strong><br><small class="text-muted">iOS, Android & cross-platform</small></div></a>
+                                    <a class="mega-menu-link" href="custom-software.html"><i class="bi bi-gear-fill"></i> <div><strong>Custom Software</strong><br><small class="text-muted">Tailored ERP, CRM & cloud logic</small></div></a>
+                                    <a class="mega-menu-link" href="ui-ux.html"><i class="bi bi-palette-fill"></i> <div><strong>UI/UX Design</strong><br><small class="text-muted">Wireframes, user flows & prototyping</small></div></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Software Systems</div>
+                                    <a class="mega-menu-link" href="custom-software.html#erp"><i class="bi bi-building"></i> <div><strong>Enterprise ERP</strong><br><small class="text-muted">Resource and logistics tracking</small></div></a>
+                                    <a class="mega-menu-link" href="custom-software.html#crm"><i class="bi bi-people-fill"></i> <div><strong>Sales CRM Software</strong><br><small class="text-muted">Manage relationships & lead pipelines</small></div></a>
+                                    <a class="mega-menu-link" href="services.html#saas"><i class="bi bi-cloud-check-fill"></i> <div><strong>SaaS Cloud Platforms</strong><br><small class="text-muted">Modern cloud multi-tenant systems</small></div></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Frameworks & Info</div>
+                                    <a class="mega-menu-link" href="technologies.html"><i class="bi bi-database-fill-gear"></i> <div><strong>Technologies Stack</strong><br><small class="text-muted">My core engineering capability</small></div></a>
+                                    <a class="mega-menu-link" href="process.html"><i class="bi bi-rocket-takeoff-fill"></i> <div><strong>Development Process</strong><br><small class="text-muted">Roadmap from planning to deploy</small></div></a>
+                                    <a class="mega-menu-link" href="faq.html"><i class="bi bi-question-circle-fill"></i> <div><strong>Pre-Project FAQ</strong><br><small class="text-muted">Answers regarding budget and support</small></div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="contact.html" class="btn btn-premium btn-premium-sm">Get A Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Subpage Header -->
+    <header class="py-5 mt-5 bg-light border-bottom border-light">
+        <div class="container py-lg-4 text-center">
+            <span class="badge badge-soft-primary mb-2 px-3 py-2 rounded-pill uppercase tracking-wider">05. Support Centre</span>
+            <h1 class="display-5 fw-extrabold text-slate mb-3">Questions Clients Ask Me</h1>
+            <p class="text-gray lead max-width-600 mx-auto mb-0">The questions clients actually ask me before hiring &mdash; cost, timelines, payments, revisions, and why you should take a chance on someone with no reviews yet.</p>
+        </div>
+    </header>
+
+    <!-- FAQ Accordion Sections -->
+    <section class="py-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 animate-on-scroll">
+                    
+                    <div class="accordion" id="generalFAQ">
+                        
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead1">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1">
+                                    Do you assign full IP ownership upon project delivery?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse1" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    Yes! Once all milestone payments are cleared, I transfer full intellectual property (IP) ownership, design files, and source code libraries directly to your organization.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead2">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2">
+                                    How do you decide between React and plain HTML/CSS for a project?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    It depends on what the page has to do. A marketing site or landing page loads faster and stays easier to maintain as hand-coded HTML, CSS and Bootstrap &mdash; no build step, no package tree to keep patched. Anything with logged-in users, live data or a dashboard goes to React, which is what I use for every system on my portfolio. I pick per project rather than forcing one answer.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead3">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3">
+                                    What are the details of your website maintenance support SLAs?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    Every project includes a free bug-fix period after launch. After that I offer a monthly retainer covering health checks, server and database monitoring, small styling or content changes, backups and security updates. Larger new features are quoted separately so you are never billed for scope you did not ask for.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead4">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4">
+                                    Can custom systems (ERP/CRM) connect to existing APIs?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    Yes, I write robust integration code connecting databases to external ERP software, CRM dashboards, SMS gateways, maps APIs, and payment modules.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead5">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5">
+                                    How much will my project cost?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    It depends on scope, but I quote a fixed price before any work starts &mdash; you will never get a surprise invoice. Landing pages start at $149 (&#8377;14,900), business websites at $299 (&#8377;29,900), mobile apps at $499 (&#8377;49,900) and custom systems like POS or ERP at $499 (&#8377;49,900). If you prefer hourly, I work at $15&ndash;$30/hr (&#8377;1,500&ndash;&#8377;3,000/hr). Indian clients are invoiced in INR, international clients in USD. Send me what you need and you will have a written quote within 24 hours.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead6">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6">
+                                    How long will my project take?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse6" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    A landing page is usually 3&ndash;5 days. A business website with several pages is 1&ndash;2 weeks. A mobile app or a custom system with logins, roles and a dashboard is typically 4&ndash;8 weeks depending on how many modules it has. I give you a milestone schedule up front, and if something is going to slip you hear it from me early &mdash; not on the deadline.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 7 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead7">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse7">
+                                    What do you need from me to get started?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse7" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    Less than you think. Tell me what the software has to do and who will use it. If you have designs, existing content or an old version of the system, send those too. If you have none of that, we do a 30-minute call and I write the scope for you. You approve it in writing before I start building.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 8 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead8">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse8">
+                                    How do payments work?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse8" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    Milestone based. Typically a deposit to begin, then payments as each agreed stage is delivered and approved by you. You are never paying for work you have not seen. Through Upwork, payments and milestones are handled by the platform's escrow, which protects both of us.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 9 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead9">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse9">
+                                    Why should I hire you when you have no reviews yet?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse9" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    Fair question, and I will not pretend otherwise: I am new to freelance platforms, so my review count is zero. What I am not new to is the work &mdash; 3 years and 7 months of full-time development, 14 systems in production including a banking portal, ERP, POS and accounting software. I will happily screen-share and walk you through the architecture of any of them before you commit a rupee. Being early means I have far more to lose from a bad review than an established freelancer does, and I price accordingly.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 10 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead10">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse10">
+                                    Can you take over a project another developer started?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse10" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    Yes, and it is some of the most common work I do. I start by reading the existing codebase and telling you honestly what state it is in &mdash; sometimes continuing is right, sometimes rebuilding one broken module is cheaper than patching it forever. You get that assessment before you commit to anything.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 11 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead11">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse11">
+                                    What if I need changes after the project is delivered?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse11" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    Every project includes a free bug-fix period after launch &mdash; if something I built does not work as agreed, I fix it at no cost. New features or changes of direction are quoted separately so you are never billed for scope you did not ask for. Many clients keep me on a small monthly retainer for ongoing changes.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 12 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead12">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse12">
+                                    Will I be able to update the content myself?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse12" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    If that matters to you, say so at the scope stage and I will build an admin panel for it &mdash; text, images, products, prices, whatever you need to change without calling a developer. It costs a little more up front and saves you far more over the life of the site.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 13 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead13">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse13">
+                                    Do you handle hosting and domain setup?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse13" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    Yes. I can deploy to your own server or set up hosting for you, including SSL, domain connection, database configuration and backups. I have deployed to both Linux cloud hosts and Windows Server with SQL Server. The hosting bill stays in your name and on your card &mdash; I never hold your infrastructure hostage.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 14 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead14">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse14">
+                                    Will you sign an NDA?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse14" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    Yes, without hesitation. Every project in my portfolio is covered by confidentiality, which is exactly why you see icons there instead of client screenshots. Your project gets the same treatment.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 15 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead15">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse15">
+                                    You are in India &mdash; will the time difference be a problem?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse15" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    It has not been so far. I work 9:00 AM to 7:00 PM IST (GMT+5:30) and reply to messages within 24 hours, usually much sooner. That overlaps comfortably with Europe, the Middle East and Asia, and I regularly take early-morning or late-evening calls for US clients. Tell me your working hours and I will fit around them.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 16 -->
+                        <div class="accordion-item faq-accordion-item">
+                            <h2 class="accordion-header" id="faqHead16">
+                                <button class="accordion-button faq-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse16">
+                                    What if I do not like the design?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse16" class="accordion-collapse collapse" data-bs-parent="#generalFAQ">
+                                <div class="accordion-body faq-accordion-body">
+                                    You see the design before I build it, not after. I share layouts at the design stage and revise them until you are happy &mdash; changing a layout takes minutes, changing a built application takes days. Nothing gets coded until you have approved how it looks.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rounded-card text-center mt-5">
+                        <h2 class="h5 text-slate mb-2">Still have a question?</h2>
+                        <p class="small text-gray mb-4">Ask me directly &mdash; I answer every message within 24 hours, and I will tell you honestly if your project is not a good fit for me.</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <a href="contact.html" class="btn btn-premium btn-premium-sm">Send Me A Message</a>
+                            <a href="https://wa.me/917601880138" target="_blank" rel="noopener" class="btn btn-outline-premium btn-premium-sm"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Row -->
+    <footer class="py-5 bg-light border-top border-light mt-auto">
+        <div class="container">
+            <div class="row g-4 justify-content-between text-center text-md-start">
+                <div class="col-lg-4 col-12">
+                    <div class="footer-logo d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3">
+                        <div class="brand-logo fw-bold">N</div>
+                        <span class="brand-name">Naveen.Dev</span>
+                    </div>
+                    <p class="small text-muted mb-3">Full stack development for businesses that need software built properly &mdash; MERN stack web apps, React Native mobile apps, admin dashboards and custom business systems.</p>
+                    <div class="mb-3">
+                        <span class="availability-pill"><span class="availability-dot"></span> Available for freelance projects</span>
+                    </div>
+                    <div class="profile-stack mb-3">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>SQL Server</span>
+                        <span>React Native</span>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-2">
+                        <a href="https://www.upwork.com/freelancers/~010cbae54f7f3a4a92" target="_blank" rel="noopener" class="footer-social-icon" title="Hire me on Upwork" aria-label="Upwork"><i class="bi bi-briefcase-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/naveen-kumar-a76729263" target="_blank" rel="noopener" class="footer-social-icon" title="LinkedIn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://wa.me/917601880138" target="_blank" rel="noopener" class="footer-social-icon" title="WhatsApp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:naveenkumar.coder@gmail.com" class="footer-social-icon" title="Email" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h5 class="h6 mb-3">My Services</h5>
+                    <a href="web-development.html" class="footer-link small">Web Development</a>
+                    <a href="mobile-development.html" class="footer-link small">Mobile App Development</a>
+                    <a href="custom-software.html" class="footer-link small">Custom Software ERP/CRM</a>
+                    <a href="ui-ux.html" class="footer-link small">UI/UX Interface Design</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h5 class="h6 mb-3">Quick Directory</h5>
+                    <a href="about.html" class="footer-link small">About Company Story</a>
+                    <a href="portfolio.html" class="footer-link small">Project Portfolio Cases</a>
+                    <a href="pricing.html" class="footer-link small">Quotation Pricing Plans</a>
+                    <a href="faq.html" class="footer-link small">Common Questions FAQ</a>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5 class="h6 mb-3">Support Contacts</h5>
+                    <p class="small text-muted mb-1"><i class="bi bi-envelope-fill me-2"></i>naveenkumar.coder@gmail.com</p>
+                    <p class="small text-muted mb-1"><i class="bi bi-telephone-fill me-2"></i>+91 76018 80138</p>
+                    <p class="small text-muted mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Coimbatore, India</p>
+                </div>
+            </div>
+            <hr class="border-light my-4">
+            <div class="text-center text-muted small">
+                &copy; 2026 Naveen Kumar K &middot; Full Stack Developer, Coimbatore, India &middot; Hand-coded, no page builders.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top-btn" title="Back to Top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- Bootstrap Bundle with Popper JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script defer src="script.js"></script>
+</body>
+</html>

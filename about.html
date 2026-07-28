@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Naveen Kumar K</title>
+    <meta name="description" content="Read Naveen Kumar K's story, development mission, visual vision, core values, and professional employment timeline.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563EB'/%3E%3Ctext x='50' y='70' font-family='Outfit,Arial,sans-serif' font-size='58' font-weight='700' fill='white' text-anchor='middle'%3EN.%3C/text%3E%3C/svg%3E">
+    <!-- Link preview for WhatsApp, LinkedIn and Upwork proposals -->
+    <!-- TODO: replace SITE_URL with your live domain once the site is hosted -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Us | Naveen Kumar K">
+    <meta property="og:description" content="Read Naveen Kumar K's story, development mission, visual vision, core values, and professional employment timeline.">
+    <meta property="og:image" content="SITE_URL/hero_tech.png">
+    <meta property="og:site_name" content="Naveen.Dev - Naveen Kumar K">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Us | Naveen Kumar K">
+    <meta name="twitter:description" content="Read Naveen Kumar K's story, development mission, visual vision, core values, and professional employment timeline.">
+    <meta name="author" content="Naveen Kumar K">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Page Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="spinner-custom"></div>
+    </div>
+
+    <!-- Navigation Bar with Mega Menu -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <div class="brand-logo fw-bold">N</div>
+                <span class="brand-name">Naveen.Dev</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1 gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item dropdown dropdown-mega">
+                        <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu dropdown-mega-menu border-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Core Capabilities</div>
+                                    <a class="mega-menu-link" href="web-development.html"><i class="bi bi-laptop"></i> <div><strong>Web Development</strong><br><small class="text-muted">Business websites & e-commerce</small></div></a>
+                                    <a class="mega-menu-link" href="mobile-development.html"><i class="bi bi-phone"></i> <div><strong>Mobile Apps</strong><br><small class="text-muted">iOS, Android & cross-platform</small></div></a>
+                                    <a class="mega-menu-link" href="custom-software.html"><i class="bi bi-gear-fill"></i> <div><strong>Custom Software</strong><br><small class="text-muted">Tailored ERP, CRM & cloud logic</small></div></a>
+                                    <a class="mega-menu-link" href="ui-ux.html"><i class="bi bi-palette-fill"></i> <div><strong>UI/UX Design</strong><br><small class="text-muted">Wireframes, user flows & prototyping</small></div></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Software Systems</div>
+                                    <a class="mega-menu-link" href="custom-software.html#erp"><i class="bi bi-building"></i> <div><strong>Enterprise ERP</strong><br><small class="text-muted">Resource and logistics tracking</small></div></a>
+                                    <a class="mega-menu-link" href="custom-software.html#crm"><i class="bi bi-people-fill"></i> <div><strong>Sales CRM Software</strong><br><small class="text-muted">Manage relationships & lead pipelines</small></div></a>
+                                    <a class="mega-menu-link" href="services.html#saas"><i class="bi bi-cloud-check-fill"></i> <div><strong>SaaS Cloud Platforms</strong><br><small class="text-muted">Modern cloud multi-tenant systems</small></div></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Frameworks & Info</div>
+                                    <a class="mega-menu-link" href="technologies.html"><i class="bi bi-database-fill-gear"></i> <div><strong>Technologies Stack</strong><br><small class="text-muted">My core engineering capability</small></div></a>
+                                    <a class="mega-menu-link" href="process.html"><i class="bi bi-rocket-takeoff-fill"></i> <div><strong>Development Process</strong><br><small class="text-muted">Roadmap from planning to deploy</small></div></a>
+                                    <a class="mega-menu-link" href="faq.html"><i class="bi bi-question-circle-fill"></i> <div><strong>Pre-Project FAQ</strong><br><small class="text-muted">Answers regarding budget and support</small></div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="contact.html" class="btn btn-premium btn-premium-sm">Get A Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Subpage Header -->
+    <header class="py-5 mt-5 bg-light border-bottom border-light">
+        <div class="container py-lg-4 text-center">
+            <span class="badge badge-soft-primary mb-2 px-3 py-2 rounded-pill uppercase tracking-wider">01. About Me</span>
+            <h1 class="display-5 fw-extrabold text-slate mb-3">My Story & Goals</h1>
+            <p class="text-gray lead max-width-600 mx-auto mb-0">How I went from front-end layouts at a brand agency to shipping SaaS, banking, ERP and POS systems in production.</p>
+        </div>
+    </header>
+
+    <!-- Professional Journey & Bio Section -->
+    <section class="py-100">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7 animate-on-scroll">
+                    <span class="text-primary fw-semibold uppercase tracking-wider d-block mb-2">Profile</span>
+                    <h2 class="h1 fw-bold text-slate mb-4">Professional Story</h2>
+                    <p class="text-gray mb-4">
+                        I am a <strong>Full Stack Developer</strong> with <strong>3 years and 7 months</strong> of hands-on experience designing, building and deploying software that businesses run on every day. Based in Coimbatore, I work primarily in the MERN stack, with SQL Server for relational workloads and React Native for mobile.
+                    </p>
+                    <p class="text-gray mb-4">
+                        The systems I have shipped are the unglamorous kind that have to be right &mdash; a banking portal where a stale balance is a real problem, a POS counter that cannot oversell stock, an accounting ledger that has to reconcile. My focus is on getting the data model and the business rules correct first, then building an interface clean enough that people actually want to use it.
+                    </p>
+                    <p class="text-gray mb-4">
+                        I work directly with clients, not through a layer of account managers. You talk to the person writing the code, which means scope questions get answered the same day instead of the same week.
+                    </p>
+
+                    <div class="story-quote mb-4">
+                        <p class="mb-2">"Technology should support human work seamlessly. My goal is to turn business complexity into applications that are fast, modular and maintainable."</p>
+                        <strong class="text-slate small">&mdash; Naveen Kumar K</strong>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-sm-4">
+                            <div class="rounded-card h-100 text-center py-4 px-3">
+                                <div class="h3 fw-bold text-primary mb-1">14</div>
+                                <p class="small text-gray mb-0">Production systems shipped</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="rounded-card h-100 text-center py-4 px-3">
+                                <div class="h3 fw-bold text-primary mb-1">3.7</div>
+                                <p class="small text-gray mb-0">Years of experience</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="rounded-card h-100 text-center py-4 px-3">
+                                <div class="h3 fw-bold text-primary mb-1">24h</div>
+                                <p class="small text-gray mb-0">Typical reply time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 animate-on-scroll">
+                    <div class="profile-card">
+                        <div class="profile-photo-frame">
+                            <img src="naveen-profile.jpg" alt="Naveen Kumar K, Full Stack Developer based in Coimbatore" class="profile-photo" width="132" height="132" loading="eager">
+                        </div>
+                        <div class="profile-body">
+                            <div class="text-center">
+                                <h3 class="h4 text-slate mb-1">Naveen Kumar K</h3>
+                                <p class="text-gray small mb-3">Full Stack Developer</p>
+                                <span class="availability-pill"><span class="availability-dot"></span> Available for new projects</span>
+                            </div>
+
+                            <ul class="profile-facts">
+                                <li>
+                                    <span class="fact-label"><i class="bi bi-geo-alt-fill"></i> Location</span>
+                                    <span class="fact-value">Coimbatore, India</span>
+                                </li>
+                                <li>
+                                    <span class="fact-label"><i class="bi bi-clock-fill"></i> Time zone</span>
+                                    <span class="fact-value">IST (GMT+5:30)</span>
+                                </li>
+                                <li>
+                                    <span class="fact-label"><i class="bi bi-briefcase-fill"></i> Experience</span>
+                                    <span class="fact-value">3 yrs 7 mos</span>
+                                </li>
+                                <li>
+                                    <span class="fact-label"><i class="bi bi-cash-coin"></i> Hourly rate</span>
+                                    <span class="fact-value">$15 &ndash; $30 / hr<br><small class="text-muted">&#8377;1,500 &ndash; &#8377;3,000</small></span>
+                                </li>
+                                <li>
+                                    <span class="fact-label"><i class="bi bi-translate"></i> Languages</span>
+                                    <span class="fact-value">English, Tamil</span>
+                                </li>
+                            </ul>
+
+                            <div class="profile-stack">
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>SQL Server</span>
+                                <span>React Native</span>
+                                <span>Express</span>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <a href="https://www.upwork.com/freelancers/~010cbae54f7f3a4a92" target="_blank" rel="noopener" class="btn btn-premium"><i class="bi bi-briefcase-fill me-2"></i>Hire Me On Upwork</a>
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <a href="Naveen-Kumar-K-Resume.pdf" download class="btn btn-outline-premium w-100 btn-premium-sm"><i class="bi bi-download me-1"></i>CV</a>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="https://www.linkedin.com/in/naveen-kumar-a76729263" target="_blank" rel="noopener" class="btn btn-outline-premium w-100 btn-premium-sm"><i class="bi bi-linkedin me-1"></i>LinkedIn</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="btn btn-outline-premium btn-premium-sm"><i class="bi bi-chat-dots-fill me-2"></i>Send A Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, and Values Cards -->
+    <section class="py-100 bg-light-section">
+        <div class="container">
+            <div class="row g-4 justify-content-center text-center">
+                <!-- Mission -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md primary mx-auto"><i class="bi bi-send-fill"></i></div>
+                        <h3 class="h4 mb-3">Development Mission</h3>
+                        <p class="small text-gray mb-0">To develop production-quality, fast-loading, and responsive software systems that optimize workflows and deliver clear business value.</p>
+                    </div>
+                </div>
+                <!-- Vision -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md accent mx-auto"><i class="bi bi-eye-fill"></i></div>
+                        <h3 class="h4 mb-3">Visual Vision</h3>
+                        <p class="small text-gray mb-0">To pioneer clean-code standards and highly premium frontend interfaces, making web and mobile applications visual masterpieces.</p>
+                    </div>
+                </div>
+                <!-- Values -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md success mx-auto"><i class="bi bi-heart-fill"></i></div>
+                        <h3 class="h4 mb-3">Core Values</h3>
+                        <p class="small text-gray mb-0">Focusing heavily on technical transparency, modular database designs, beautiful interface layouts, and robust cross-browser support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section class="py-100">
+        <div class="container">
+            <div class="text-center mb-5 max-width-600 mx-auto animate-on-scroll">
+                <span class="text-primary fw-semibold uppercase tracking-wider d-block mb-2">Employment</span>
+                <h2 class="h1 fw-bold mb-3">Professional Experience</h2>
+                <p class="text-gray">3 Years & 7 Months of engineering production applications across diverse MERN and SQL projects.</p>
+            </div>
+
+            <div class="process-timeline">
+                
+                <!-- Senthil Mobiles Technologies -->
+                <div class="process-item animate-on-scroll">
+                    <div class="process-dot"><i class="bi bi-briefcase-fill text-white small"></i></div>
+                    <div class="process-content">
+                        <span class="badge badge-soft-primary mb-2">Jul 2024 - Present (24 Months)</span>
+                        <h4 class="h5 text-slate mb-1">Full Stack Developer</h4>
+                        <h6 class="text-primary mb-3">Senthil Mobiles Technologies OPC Pvt Ltd, Coimbatore</h6>
+                        <ul class="small text-gray ps-3 d-flex flex-column gap-2 mb-0">
+                            <li>Developed a scalable SaaS platform with super admin and customization modules for enterprise operations.</li>
+                            <li>Engineered a dynamic secure document signature workflow supporting multi-member signing tracks.</li>
+                            <li>Delivered a custom e-commerce solution configured on Windows Server & SQL Server featuring discount points systems and custom dashboard analytics.</li>
+                            <li>Coded a complete passenger/driver ride-hailing portal featuring coordinates mapping, live tracking, and dynamic fare estimation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Nextskill Technologies -->
+                <div class="process-item animate-on-scroll">
+                    <div class="process-dot"><i class="bi bi-briefcase-fill text-white small"></i></div>
+                    <div class="process-content">
+                        <span class="badge badge-soft-primary mb-2">Jun 2023 - Jun 2024 (13 Months)</span>
+                        <h4 class="h5 text-slate mb-1">MERN Stack Developer</h4>
+                        <h6 class="text-primary mb-3">Nextskill Technologies Pvt Ltd, Coimbatore</h6>
+                        <ul class="small text-gray ps-3 d-flex flex-column gap-2 mb-0">
+                            <li>Designed and launched the "Tournaments Arena" game event site featuring automated team shuffles and matchmaking.</li>
+                            <li>Managed full stack operations independently and trained students on MERN stack logic for academic and commercial applications.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Concepts Brand Agency -->
+                <div class="process-item animate-on-scroll">
+                    <div class="process-dot"><i class="bi bi-briefcase-fill text-white small"></i></div>
+                    <div class="process-content">
+                        <span class="badge badge-soft-primary mb-2">Nov 2021 - Apr 2022 (6 Months)</span>
+                        <h4 class="h5 text-slate mb-1">Front-End Developer</h4>
+                        <h6 class="text-primary mb-3">Concepts Brand Design Agency, Coimbatore</h6>
+                        <ul class="small text-gray ps-3 d-flex flex-column gap-2 mb-0">
+                            <li>Customized responsive layouts, proof-of-concept mockups, and client UI dashboards utilizing Bootstrap styling tokens.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education and Certifications Section -->
+    <section class="py-100 bg-light-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 animate-on-scroll">
+                    <h3 class="h2 fw-bold text-slate mb-4">Education & Training</h3>
+                    <p class="text-gray mb-4">
+                        Academic background and professional programming training validating my engineering workflows.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="p-3 border border-light rounded bg-white text-start">
+                                <span class="badge badge-soft-primary mb-1">2015 - 2018</span>
+                                <h5 class="h6 text-slate mb-1">Diploma in Mechanical Engineering</h5>
+                                <small class="text-muted">PSG Ponnammal Polytechnic College, Coimbatore</small>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-3 border border-light rounded bg-white text-start">
+                                <span class="badge badge-soft-primary mb-1">2013 - 2015</span>
+                                <h5 class="h6 text-slate mb-1">Class XII (Higher Secondary School Certificate)</h5>
+                                <small class="text-muted">Tamil Nadu State Board, Coimbatore</small>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="p-3 border border-light rounded bg-white text-start">
+                                <span class="badge badge-soft-primary mb-1">2012 - 2013</span>
+                                <h5 class="h6 text-slate mb-1">Class X (Secondary School Leaving Certificate)</h5>
+                                <small class="text-muted">Tamil Nadu State Board, Coimbatore</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animate-on-scroll">
+                    <div class="rounded-card bg-white">
+                        <h4 class="h5 text-slate mb-4"><i class="bi bi-mortarboard-fill text-primary me-2"></i>Professional Training</h4>
+                        <ul class="list-unstyled text-gray small d-flex flex-column gap-3 mb-0">
+                            <li class="d-flex align-items-start gap-2">
+                                <i class="bi bi-patch-check-fill text-success fs-5"></i>
+                                <div>
+                                    <strong class="text-slate d-block">MERN Stack Developer Program (15 Months)</strong>
+                                    <span class="text-muted">Skill Safari Software Training Institute, Coimbatore (Jan 2022 - Apr 2023)</span>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start gap-2">
+                                <i class="bi bi-patch-check-fill text-success fs-5"></i>
+                                <div>
+                                    <strong class="text-slate d-block">Full Stack Systems Deployment</strong>
+                                    <span class="text-muted">Focused on MERN architecture, Git workflows, database configuration, and Stripe APIs.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Row -->
+    <footer class="py-5 bg-light border-top border-light mt-auto">
+        <div class="container">
+            <div class="row g-4 justify-content-between text-center text-md-start">
+                <div class="col-lg-4 col-12">
+                    <div class="footer-logo d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3">
+                        <div class="brand-logo fw-bold">N</div>
+                        <span class="brand-name">Naveen.Dev</span>
+                    </div>
+                    <p class="small text-muted mb-3">Full stack development for businesses that need software built properly &mdash; MERN stack web apps, React Native mobile apps, admin dashboards and custom business systems.</p>
+                    <div class="mb-3">
+                        <span class="availability-pill"><span class="availability-dot"></span> Available for freelance projects</span>
+                    </div>
+                    <div class="profile-stack mb-3">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>SQL Server</span>
+                        <span>React Native</span>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-2">
+                        <a href="https://www.upwork.com/freelancers/~010cbae54f7f3a4a92" target="_blank" rel="noopener" class="footer-social-icon" title="Hire me on Upwork" aria-label="Upwork"><i class="bi bi-briefcase-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/naveen-kumar-a76729263" target="_blank" rel="noopener" class="footer-social-icon" title="LinkedIn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://wa.me/917601880138" target="_blank" rel="noopener" class="footer-social-icon" title="WhatsApp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:naveenkumar.coder@gmail.com" class="footer-social-icon" title="Email" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h5 class="h6 mb-3">My Services</h5>
+                    <a href="web-development.html" class="footer-link small">Web Development</a>
+                    <a href="mobile-development.html" class="footer-link small">Mobile App Development</a>
+                    <a href="custom-software.html" class="footer-link small">Custom Software ERP/CRM</a>
+                    <a href="ui-ux.html" class="footer-link small">UI/UX Interface Design</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h5 class="h6 mb-3">Quick Directory</h5>
+                    <a href="about.html" class="footer-link small">About Company Story</a>
+                    <a href="portfolio.html" class="footer-link small">Project Portfolio Cases</a>
+                    <a href="pricing.html" class="footer-link small">Quotation Pricing Plans</a>
+                    <a href="faq.html" class="footer-link small">Common Questions FAQ</a>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5 class="h6 mb-3">Support Contacts</h5>
+                    <p class="small text-muted mb-1"><i class="bi bi-envelope-fill me-2"></i>naveenkumar.coder@gmail.com</p>
+                    <p class="small text-muted mb-1"><i class="bi bi-telephone-fill me-2"></i>+91 76018 80138</p>
+                    <p class="small text-muted mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Coimbatore, India</p>
+                </div>
+            </div>
+            <hr class="border-light my-4">
+            <div class="text-center text-muted small">
+                &copy; 2026 Naveen Kumar K &middot; Full Stack Developer, Coimbatore, India &middot; Hand-coded, no page builders.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top-btn" title="Back to Top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- Bootstrap Bundle with Popper JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script defer src="script.js"></script>
+</body>
+</html>

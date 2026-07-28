@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design Services | Naveen Kumar K</title>
+    <meta name="description" content="Explore Naveen Kumar K' design workflow. I create interactive Figma wireframes, web/mobile UI prototypes, branding guidelines, and design systems.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563EB'/%3E%3Ctext x='50' y='70' font-family='Outfit,Arial,sans-serif' font-size='58' font-weight='700' fill='white' text-anchor='middle'%3EN.%3C/text%3E%3C/svg%3E">
+    <!-- Link preview for WhatsApp, LinkedIn and Upwork proposals -->
+    <!-- TODO: replace SITE_URL with your live domain once the site is hosted -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UI/UX Design Services | Naveen Kumar K">
+    <meta property="og:description" content="Explore Naveen Kumar K' design workflow. I create interactive Figma wireframes, web/mobile UI prototypes, branding guidelines, and design systems.">
+    <meta property="og:image" content="SITE_URL/hero_tech.png">
+    <meta property="og:site_name" content="Naveen.Dev - Naveen Kumar K">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UI/UX Design Services | Naveen Kumar K">
+    <meta name="twitter:description" content="Explore Naveen Kumar K' design workflow. I create interactive Figma wireframes, web/mobile UI prototypes, branding guidelines, and design systems.">
+    <meta name="author" content="Naveen Kumar K">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Page Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="spinner-custom"></div>
+    </div>
+
+    <!-- Navigation Bar with Mega Menu -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <div class="brand-logo fw-bold">N</div>
+                <span class="brand-name">Naveen.Dev</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1 gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown dropdown-mega">
+                        <a class="nav-link dropdown-toggle active" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu dropdown-mega-menu border-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Core Capabilities</div>
+                                    <a class="mega-menu-link" href="web-development.html"><i class="bi bi-laptop"></i> <div><strong>Web Development</strong><br><small class="text-muted">Business websites & e-commerce</small></div></a>
+                                    <a class="mega-menu-link" href="mobile-development.html"><i class="bi bi-phone"></i> <div><strong>Mobile Apps</strong><br><small class="text-muted">iOS, Android & cross-platform</small></div></a>
+                                    <a class="mega-menu-link" href="custom-software.html"><i class="bi bi-gear-fill"></i> <div><strong>Custom Software</strong><br><small class="text-muted">Tailored ERP, CRM & cloud logic</small></div></a>
+                                    <a class="mega-menu-link" href="ui-ux.html"><i class="bi bi-palette-fill"></i> <div><strong>UI/UX Design</strong><br><small class="text-muted">Wireframes, user flows & prototyping</small></div></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Software Systems</div>
+                                    <a class="mega-menu-link" href="custom-software.html#erp"><i class="bi bi-building"></i> <div><strong>Enterprise ERP</strong><br><small class="text-muted">Resource and logistics tracking</small></div></a>
+                                    <a class="mega-menu-link" href="custom-software.html#crm"><i class="bi bi-people-fill"></i> <div><strong>Sales CRM Software</strong><br><small class="text-muted">Manage relationships & lead pipelines</small></div></a>
+                                    <a class="mega-menu-link" href="services.html#saas"><i class="bi bi-cloud-check-fill"></i> <div><strong>SaaS Cloud Platforms</strong><br><small class="text-muted">Modern cloud multi-tenant systems</small></div></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Frameworks & Info</div>
+                                    <a class="mega-menu-link" href="technologies.html"><i class="bi bi-database-fill-gear"></i> <div><strong>Technologies Stack</strong><br><small class="text-muted">My core engineering capability</small></div></a>
+                                    <a class="mega-menu-link" href="process.html"><i class="bi bi-rocket-takeoff-fill"></i> <div><strong>Development Process</strong><br><small class="text-muted">Roadmap from planning to deploy</small></div></a>
+                                    <a class="mega-menu-link" href="faq.html"><i class="bi bi-question-circle-fill"></i> <div><strong>Pre-Project FAQ</strong><br><small class="text-muted">Answers regarding budget and support</small></div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="contact.html" class="btn btn-premium btn-premium-sm">Get A Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Subpage Header -->
+    <header class="py-5 mt-5 bg-light border-bottom border-light">
+        <div class="container py-lg-4 text-center">
+            <span class="badge badge-soft-primary mb-2 px-3 py-2 rounded-pill uppercase tracking-wider">Design Division</span>
+            <h1 class="display-5 fw-extrabold text-slate mb-3">UI/UX Design & Branding</h1>
+            <p class="text-gray lead max-width-600 mx-auto mb-0">Crafting high-fidelity mockups, wireframes, prototypes, user flows, and comprehensive design systems for web and mobile interfaces.</p>
+        </div>
+    </header>
+
+    <!-- Design Specialties Grid Section -->
+    <section class="py-100">
+        <div class="container">
+            <div class="text-center mb-5 max-width-600 mx-auto animate-on-scroll">
+                <h2 class="h1 fw-bold text-slate">My UI/UX Deliverables</h2>
+                <p class="text-gray">Structuring interface variables using formal user experience frameworks.</p>
+            </div>
+
+            <div class="row g-4">
+                
+                <!-- 1. Wireframes -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md primary"><i class="bi bi-bezier"></i></div>
+                        <h3 class="h5 text-slate mb-2">Wireframes</h3>
+                        <p class="small text-gray mb-0">Low-fidelity grayscale layouts mapping spacing grids, column guides, and button locations. Ensures functional hierarchy prior to visual designs.</p>
+                    </div>
+                </div>
+
+                <!-- 2. User Flows -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md primary"><i class="bi bi-arrow-right-circle-fill"></i></div>
+                        <h3 class="h5 text-slate mb-2">User Flows</h3>
+                        <p class="small text-gray mb-0">Step-by-step visual pathways detailing how users cross storefront interfaces, cart checkout validations, or dashboard settings.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Prototypes -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md primary"><i class="bi bi-play-circle-fill"></i></div>
+                        <h3 class="h5 text-slate mb-2">Interactive Prototypes</h3>
+                        <p class="small text-gray mb-0">Figma visual prototypes mapping dynamic interactions, transitions, and hover properties. Replicates the final software feel before code creation.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Dashboard Design -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md primary"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+                        <h3 class="h5 text-slate mb-2">Dashboard Design</h3>
+                        <p class="small text-gray mb-0">Highly analytical admin panel layouts configured with region stats, sales charts, metrics summaries, and client directories tables.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Mobile UI -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md primary"><i class="bi bi-phone-fill"></i></div>
+                        <h3 class="h5 text-slate mb-2">Mobile UI Design</h3>
+                        <p class="small text-gray mb-0">Interface screens optimized for handsets, taking into account finger-press targets, drawer panels, and navigation controls.</p>
+                    </div>
+                </div>
+
+                <!-- 6. Web UI -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md primary"><i class="bi bi-laptop-fill"></i></div>
+                        <h3 class="h5 text-slate mb-2">Web UI Design</h3>
+                        <p class="small text-gray mb-0">Desktop layouts, mega menu headers, multi-column cards grids, and custom gradient button hover properties.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Design System Specifications Section -->
+
+    <!-- Design Concept Gallery -->
+    <section class="py-100">
+        <div class="container">
+            <div class="text-center mb-5 max-width-600 mx-auto animate-on-scroll">
+                <span class="text-primary fw-semibold uppercase tracking-wider d-block mb-2">Design Concepts</span>
+                <h2 class="h1 fw-bold text-slate mb-3">E-Commerce Design System</h2>
+                <p class="text-gray">A self-initiated dark-theme concept covering the three surfaces a modern store needs &mdash; storefront, admin dashboard and mobile app &mdash; drawn from one shared set of colour, spacing and type rules.</p>
+                <p class="small text-muted mb-0"><i class="bi bi-info-circle me-1"></i> Design concepts, not a shipped client product.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-8 animate-on-scroll">
+                    <div class="rounded-card p-0 overflow-hidden h-100">
+                        <img src="ecommerce_home.png" alt="E-commerce storefront design concept showing hero banner and featured product grid" class="img-fluid w-100" width="1024" height="1024" loading="lazy" decoding="async">
+                        <div class="p-4">
+                            <span class="badge badge-soft-primary mb-2">Storefront</span>
+                            <h3 class="h5 mb-2">Shop &amp; Product Discovery</h3>
+                            <p class="small text-gray mb-0">Full-bleed hero, featured product grid and a persistent cart, laid out so the product image carries the page and the price and action never compete for attention.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 animate-on-scroll">
+                    <div class="rounded-card p-0 overflow-hidden h-100">
+                        <img src="ecommerce_mobile.png" alt="Mobile commerce app design concept showing product listing and cart screens" class="img-fluid w-100" width="1024" height="1024" loading="lazy" decoding="async">
+                        <div class="p-4">
+                            <span class="badge badge-soft-primary mb-2">Mobile App</span>
+                            <h3 class="h5 mb-2">Browse &amp; Checkout Flow</h3>
+                            <p class="small text-gray mb-0">Thumb-reachable tab bar, size selection inline on the card, and a cart screen that keeps the total visible while items are edited.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 animate-on-scroll">
+                    <div class="rounded-card p-0 overflow-hidden">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-lg-8">
+                                <img src="ecommerce_admin.png" alt="Admin dashboard design concept with revenue KPIs, sales charts and recent orders table" class="img-fluid w-100" width="1024" height="1024" loading="lazy" decoding="async">
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="p-4 p-lg-5">
+                                    <span class="badge badge-soft-primary mb-2">Admin Dashboard</span>
+                                    <h3 class="h5 mb-3">Seller Analytics Console</h3>
+                                    <p class="small text-gray mb-3">KPI row first, trend charts second, order table last &mdash; so the person opening it at 9am gets the answer before they scroll.</p>
+                                    <ul class="project-points mb-0">
+                                        <li>Four-metric KPI row with movement against the previous period</li>
+                                        <li>Sales performance and monthly trend charts side by side</li>
+                                        <li>Recent orders table with colour-coded fulfilment status</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 animate-on-scroll">
+                <a href="contact.html" class="btn btn-premium">Design Something Like This With Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-100 bg-light-section">
+        <div class="container">
+            <div class="text-center mb-5 max-width-600 mx-auto animate-on-scroll">
+                <h2 class="h1 fw-bold text-slate">The Design System Framework</h2>
+                <p class="text-gray">Formulating visual tokens to ensure code consistency across all company software platforms.</p>
+            </div>
+
+            <div class="row g-4">
+                
+                <!-- Branding -->
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="rounded-card text-center">
+                        <div class="icon-box-md success mx-auto"><i class="bi bi-gem"></i></div>
+                        <h4 class="h5 mb-2">Branding Guidelines</h4>
+                        <p class="small text-gray mb-0">Custom corporate logo definitions, style variations, email templates, and letterheads specifications.</p>
+                    </div>
+                </div>
+
+                <!-- Icons -->
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="rounded-card text-center">
+                        <div class="icon-box-md success mx-auto"><i class="bi bi-stars"></i></div>
+                        <h4 class="h5 mb-2">Custom Icons Grid</h4>
+                        <p class="small text-gray mb-0">Minimalist vector icons (using Bootstrap Icons libraries) configured to highlight features cleanly.</p>
+                    </div>
+                </div>
+
+                <!-- Typography -->
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="rounded-card text-center">
+                        <div class="icon-box-md success mx-auto"><i class="bi bi-fonts"></i></div>
+                        <h4 class="h5 mb-2">Typography Tokens</h4>
+                        <p class="small text-gray mb-0">Outfit or Inter typography rules: explicit heading scales, paragraph line-heights (1.6), and tracking widths.</p>
+                    </div>
+                </div>
+
+                <!-- Color System -->
+                <div class="col-md-3 animate-on-scroll">
+                    <div class="rounded-card text-center">
+                        <div class="icon-box-md success mx-auto"><i class="bi bi-palette2"></i></div>
+                        <h4 class="h5 mb-2">Color Palette system</h4>
+                        <p class="small text-gray mb-0">Primary blue, indigo accent, canvas whites, and slate headings to establish light premium aesthetics.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Row -->
+    <footer class="py-5 bg-light border-top border-light mt-auto">
+        <div class="container">
+            <div class="row g-4 justify-content-between text-center text-md-start">
+                <div class="col-lg-4 col-12">
+                    <div class="footer-logo d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3">
+                        <div class="brand-logo fw-bold">N</div>
+                        <span class="brand-name">Naveen.Dev</span>
+                    </div>
+                    <p class="small text-muted mb-3">Full stack development for businesses that need software built properly &mdash; MERN stack web apps, React Native mobile apps, admin dashboards and custom business systems.</p>
+                    <div class="mb-3">
+                        <span class="availability-pill"><span class="availability-dot"></span> Available for freelance projects</span>
+                    </div>
+                    <div class="profile-stack mb-3">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>SQL Server</span>
+                        <span>React Native</span>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-2">
+                        <a href="https://www.upwork.com/freelancers/~010cbae54f7f3a4a92" target="_blank" rel="noopener" class="footer-social-icon" title="Hire me on Upwork" aria-label="Upwork"><i class="bi bi-briefcase-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/naveen-kumar-a76729263" target="_blank" rel="noopener" class="footer-social-icon" title="LinkedIn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://wa.me/917601880138" target="_blank" rel="noopener" class="footer-social-icon" title="WhatsApp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:naveenkumar.coder@gmail.com" class="footer-social-icon" title="Email" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h5 class="h6 mb-3">My Services</h5>
+                    <a href="web-development.html" class="footer-link small">Web Development</a>
+                    <a href="mobile-development.html" class="footer-link small">Mobile App Development</a>
+                    <a href="custom-software.html" class="footer-link small">Custom Software ERP/CRM</a>
+                    <a href="ui-ux.html" class="footer-link small">UI/UX Interface Design</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h5 class="h6 mb-3">Quick Directory</h5>
+                    <a href="about.html" class="footer-link small">About Company Story</a>
+                    <a href="portfolio.html" class="footer-link small">Project Portfolio Cases</a>
+                    <a href="pricing.html" class="footer-link small">Quotation Pricing Plans</a>
+                    <a href="faq.html" class="footer-link small">Common Questions FAQ</a>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5 class="h6 mb-3">Support Contacts</h5>
+                    <p class="small text-muted mb-1"><i class="bi bi-envelope-fill me-2"></i>naveenkumar.coder@gmail.com</p>
+                    <p class="small text-muted mb-1"><i class="bi bi-telephone-fill me-2"></i>+91 76018 80138</p>
+                    <p class="small text-muted mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Coimbatore, India</p>
+                </div>
+            </div>
+            <hr class="border-light my-4">
+            <div class="text-center text-muted small">
+                &copy; 2026 Naveen Kumar K &middot; Full Stack Developer, Coimbatore, India &middot; Hand-coded, no page builders.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top-btn" title="Back to Top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- Bootstrap Bundle with Popper JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script defer src="script.js"></script>
+</body>
+</html>

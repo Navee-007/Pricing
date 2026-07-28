@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Naveen Kumar K - Full Stack MERN Developer</title>
+    <meta name="description" content="14 production systems built by Naveen Kumar K: multi-tenant SaaS, real-time banking portals, ERP, POS, accounting software, e-commerce with admin and app, digital signature platforms and React Native apps, using React, Node.js, MongoDB and SQL Server.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563EB'/%3E%3Ctext x='50' y='70' font-family='Outfit,Arial,sans-serif' font-size='58' font-weight='700' fill='white' text-anchor='middle'%3EN.%3C/text%3E%3C/svg%3E">
+    <!-- Link preview for WhatsApp, LinkedIn and Upwork proposals -->
+    <!-- TODO: replace SITE_URL with your live domain once the site is hosted -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfolio | Naveen Kumar K - Full Stack MERN Developer">
+    <meta property="og:description" content="14 production systems built by Naveen Kumar K: multi-tenant SaaS, real-time banking portals, ERP, POS, accounting software, e-commerce with admin and app, digital signature platforms and React Native apps, using React, Node.js, MongoDB and SQL Server.">
+    <meta property="og:image" content="SITE_URL/hero_tech.png">
+    <meta property="og:site_name" content="Naveen.Dev - Naveen Kumar K">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portfolio | Naveen Kumar K - Full Stack MERN Developer">
+    <meta name="twitter:description" content="14 production systems built by Naveen Kumar K: multi-tenant SaaS, real-time banking portals, ERP, POS, accounting software, e-commerce with admin and app, digital signature platforms and React Native apps, using React, Node.js, MongoDB and SQL Server.">
+    <meta name="author" content="Naveen Kumar K">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Page Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="spinner-custom"></div>
+    </div>
+
+    <!-- Navigation Bar with Mega Menu -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <div class="brand-logo fw-bold">N</div>
+                <span class="brand-name">Naveen.Dev</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1 gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown dropdown-mega">
+                        <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu dropdown-mega-menu border-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Core Capabilities</div>
+                                    <a class="mega-menu-link" href="web-development.html"><i class="bi bi-laptop"></i> <div><strong>Web Development</strong><br><small class="text-muted">Business websites & e-commerce</small></div></a>
+                                    <a class="mega-menu-link" href="mobile-development.html"><i class="bi bi-phone"></i> <div><strong>Mobile Apps</strong><br><small class="text-muted">iOS, Android & cross-platform</small></div></a>
+                                    <a class="mega-menu-link" href="custom-software.html"><i class="bi bi-gear-fill"></i> <div><strong>Custom Software</strong><br><small class="text-muted">Tailored ERP, CRM & cloud logic</small></div></a>
+                                    <a class="mega-menu-link" href="ui-ux.html"><i class="bi bi-palette-fill"></i> <div><strong>UI/UX Design</strong><br><small class="text-muted">Wireframes, user flows & prototyping</small></div></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Software Systems</div>
+                                    <a class="mega-menu-link" href="custom-software.html#erp"><i class="bi bi-building"></i> <div><strong>Enterprise ERP</strong><br><small class="text-muted">Resource and logistics tracking</small></div></a>
+                                    <a class="mega-menu-link" href="custom-software.html#crm"><i class="bi bi-people-fill"></i> <div><strong>Sales CRM Software</strong><br><small class="text-muted">Manage relationships & lead pipelines</small></div></a>
+                                    <a class="mega-menu-link" href="services.html#saas"><i class="bi bi-cloud-check-fill"></i> <div><strong>SaaS Cloud Platforms</strong><br><small class="text-muted">Modern cloud multi-tenant systems</small></div></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Frameworks & Info</div>
+                                    <a class="mega-menu-link" href="technologies.html"><i class="bi bi-database-fill-gear"></i> <div><strong>Technologies Stack</strong><br><small class="text-muted">My core engineering capability</small></div></a>
+                                    <a class="mega-menu-link" href="process.html"><i class="bi bi-rocket-takeoff-fill"></i> <div><strong>Development Process</strong><br><small class="text-muted">Roadmap from planning to deploy</small></div></a>
+                                    <a class="mega-menu-link" href="faq.html"><i class="bi bi-question-circle-fill"></i> <div><strong>Pre-Project FAQ</strong><br><small class="text-muted">Answers regarding budget and support</small></div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="contact.html" class="btn btn-premium btn-premium-sm">Get A Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Subpage Header -->
+    <header class="py-5 mt-5 bg-light border-bottom border-light">
+        <div class="container py-lg-4 text-center">
+            <span class="badge badge-soft-primary mb-3 px-3 py-2 rounded-pill uppercase tracking-wider">Selected Work</span>
+            <h1 class="display-5 fw-extrabold text-slate mb-3">Business Problems I Have Solved</h1>
+            <p class="text-gray lead max-width-600 mx-auto mb-4">Fourteen production systems delivered in 3 years and 7 months. Each one below starts with the business problem, then what I built to fix it &mdash; SaaS platforms, real-time banking portals, ERP, POS, accounting, e-commerce, digital signature workflows and React Native apps. Bring me an idea and I will turn it into a working product.</p>
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                <span class="availability-pill"><span class="availability-dot"></span> Available for freelance projects</span>
+                <a href="contact.html" class="btn btn-premium btn-premium-sm">Discuss Your Project</a>
+                <a href="https://www.upwork.com/freelancers/~010cbae54f7f3a4a92" target="_blank" rel="noopener" class="btn btn-outline-premium btn-premium-sm"><i class="bi bi-briefcase-fill me-2"></i>Hire Me On Upwork</a>
+                <a href="Naveen-Kumar-K-Resume.pdf" download class="btn btn-outline-premium btn-premium-sm"><i class="bi bi-download me-2"></i>Download CV</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Snapshot Stats -->
+    <section class="py-80 bg-light-section">
+        <div class="container">
+            <div class="row g-4 text-center justify-content-center">
+                <div class="col-md-3 col-6 animate-on-scroll">
+                    <div class="counter-box">
+                        <h3 class="display-6 fw-bold text-primary mb-2"><span class="counter" data-target="14">0</span></h3>
+                        <p class="text-gray small mb-0 fw-semibold">Production Systems</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 animate-on-scroll">
+                    <div class="counter-box">
+                        <h3 class="display-6 fw-bold text-primary mb-2"><span class="counter" data-target="3">0</span>.7</h3>
+                        <p class="text-gray small mb-0 fw-semibold">Years Experience</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 animate-on-scroll">
+                    <div class="counter-box">
+                        <h3 class="display-6 fw-bold text-primary mb-2"><span class="counter" data-target="3">0</span></h3>
+                        <p class="text-gray small mb-0 fw-semibold">Industries Served</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 animate-on-scroll">
+                    <div class="counter-box">
+                        <h3 class="display-6 fw-bold text-primary mb-2">MERN</h3>
+                        <p class="text-gray small mb-0 fw-semibold">+ SQL Server &amp; React Native</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-100">
+        <div class="container">
+
+            <!-- Confidentiality note -->
+            <div class="rounded-card bg-light border border-light mb-5 d-flex flex-wrap align-items-center gap-3 justify-content-between">
+                <div class="d-flex align-items-start gap-3">
+                    <div class="icon-box-md primary flex-shrink-0"><i class="bi bi-shield-lock-fill"></i></div>
+                    <div>
+                        <h2 class="h6 text-slate mb-1">Why you see icons instead of screenshots</h2>
+                        <p class="small text-gray mb-0">Every system below is a private client or employer product covered by confidentiality, so public screenshots are not shared. I am happy to walk through the architecture, data model and a guided screen-share demo on a call.</p>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn btn-outline-premium btn-premium-sm flex-shrink-0">Request A Walkthrough</a>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+                <button class="portfolio-filter-btn active" onclick="filterPortfolio('all')">All projects</button>
+                <button class="portfolio-filter-btn" onclick="filterPortfolio('software')">Business software</button>
+                <button class="portfolio-filter-btn" onclick="filterPortfolio('web')">Web platforms</button>
+                <button class="portfolio-filter-btn" onclick="filterPortfolio('mobile')">Mobile apps</button>
+            </div>
+
+            <!-- Portfolio Cards Grid -->
+            <div class="row g-4" id="portfolioContainer">
+
+                <!-- 1. SaaS Platform -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="software">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover cover-accent">
+                            <span class="project-cover-tag">Web &middot; App &middot; PWA</span>
+                            <span class="project-cover-year">2024 &ndash; 2026</span>
+                            <div class="project-cover-icon"><i class="bi bi-cloud-check-fill"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">Multi-Tenant SaaS Platform</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">Every new customer needed their own build of the product, so the team was maintaining separate codebases that slowly drifted apart.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">One SaaS product delivered on three surfaces &mdash; web console, mobile app and installable PWA &mdash; all served by a single API with a super-admin layer that provisions each customer's workspace.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Tenant records scoped at the query layer so no customer can read another's data</li>
+                                <li>Service worker caching for the PWA so field users keep working with no signal, syncing on reconnect</li>
+                                <li>One versioned REST API behind all three clients &mdash; a feature is built once, not three times</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-layers-fill"></i> Multi-tenant SaaS</div>
+                                <div><i class="bi bi-box-seam"></i> Web console + Mobile app + PWA</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React.js</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">MongoDB</span>
+                                <span class="badge bg-light text-slate border border-light">PWA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Real-Time Banking Platform -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="software">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover">
+                            <span class="project-cover-tag">Real-Time Banking</span>
+                            <span class="project-cover-year">2023 &ndash; 2024</span>
+                            <div class="project-cover-icon"><i class="bi bi-bank2"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">Banking Platform &mdash; Multi-Portal</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">Customers, branch staff and admins each worked from a different system, so balances and pending requests were constantly out of sync between them.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">A banking system split into three separate portals &mdash; customer, staff and admin &mdash; running on one core API, where a transaction posted in any portal updates the others in real time.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Three portals off one API, with route-level permission checks on the server, not just hidden menus</li>
+                                <li>Socket.IO channels pushing balance and request changes so staff never work from a stale screen</li>
+                                <li>Staff actions written as an append-only audit trail, so every change is traceable to a user</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-bank"></i> Banking &amp; fintech</div>
+                                <div><i class="bi bi-box-seam"></i> Customer + Staff + Admin portals</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React.js</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">Socket.IO</span>
+                                <span class="badge bg-light text-slate border border-light">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. ERP Software -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="software">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover cover-warm">
+                            <span class="project-cover-tag">Enterprise ERP</span>
+                            <span class="project-cover-year">2024 &ndash; 2026</span>
+                            <div class="project-cover-icon"><i class="bi bi-building-gear"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">ERP Software</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">Each department kept its own spreadsheet, so stock, purchase and sales figures never agreed at month end and nobody could say which was correct.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">A connected ERP where inventory, purchase, sales and resource data live on shared master records, so every department reads the same numbers instead of keeping its own sheet.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Shared master tables for items, parties and locations, so modules cannot drift out of sync</li>
+                                <li>Role-driven dashboards where each department only queries the records it owns</li>
+                                <li>Reports built on indexed aggregate queries rather than looping the API, keeping them fast as data grows</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-building"></i> Enterprise operations</div>
+                                <div><i class="bi bi-box-seam"></i> Web app + Role dashboards</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React.js</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Accounting Software -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="software">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover cover-success">
+                            <span class="project-cover-tag">Accounting</span>
+                            <span class="project-cover-year">2024 &ndash; 2026</span>
+                            <div class="project-cover-icon"><i class="bi bi-journal-bookmark-fill"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">Accounting Software</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">The books were maintained by hand, so entry errors only surfaced at period close &mdash; the point where they are hardest and most expensive to trace.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">A books-of-accounts system covering ledgers, vouchers, invoices and statements, built so the balances stay reconciled without an accountant re-checking every entry by hand.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Double-entry posting where every voucher writes balanced debit and credit rows</li>
+                                <li>Invoice, payment and receipt flows wrapped in transactions so a partial write cannot corrupt balances</li>
+                                <li>Tax breakdowns and printable statements generated from the ledger, not from separate stored totals</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-calculator"></i> Finance &amp; accounting</div>
+                                <div><i class="bi bi-box-seam"></i> Web app + Financial reports</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React.js</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. POS System -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="software">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover">
+                            <span class="project-cover-tag">Point Of Sale</span>
+                            <span class="project-cover-year">2024 &ndash; 2026</span>
+                            <div class="project-cover-icon"><i class="bi bi-upc-scan"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">POS Billing System</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">Billing at the counter was slow during rush hours, and stock counts drifted far enough that staff were selling items that had already run out.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">A counter billing system tuned for speed &mdash; the cashier can complete a sale entirely from the keyboard while stock and day totals update behind the screen.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Billing screen fully keyboard-driven with barcode input, so a sale never waits on a mouse</li>
+                                <li>Stock deducted inside the same transaction as the bill, preventing oversell on concurrent counters</li>
+                                <li>Split payment modes per bill and receipt printing, with day-close totals reconciled against the register</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-shop"></i> Retail &amp; billing</div>
+                                <div><i class="bi bi-box-seam"></i> POS terminal + Admin reports</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React.js</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Document Signature Platform -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="software">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover cover-accent">
+                            <span class="project-cover-tag">Digital Signature</span>
+                            <span class="project-cover-year">2024 &ndash; 2026</span>
+                            <div class="project-cover-icon"><i class="bi bi-file-earmark-check-fill"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">Document Signature Platform</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">Contracts were emailed around for signatures with no way to see who had signed, who was holding it up, or whether the final copy was the right version.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">A digital signing platform where one document travels through several approvers &mdash; each signer gets a secure link, and the sender watches the flow move stage by stage.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Signing routes modelled as a state machine, so ordered and parallel approvals follow one code path</li>
+                                <li>Per-signer tokenised links that expire, with document status tracked at every stage</li>
+                                <li>Server-side authorization on every document fetch &mdash; a link alone never grants access</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-vector-pen"></i> Document workflow</div>
+                                <div><i class="bi bi-box-seam"></i> Web platform + Signer portal</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React.js</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">Express</span>
+                                <span class="badge bg-light text-slate border border-light">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. E-Commerce Platform -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="web">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover cover-warm">
+                            <span class="project-cover-tag">Store &middot; Admin &middot; App</span>
+                            <span class="project-cover-year">2024 &ndash; 2026</span>
+                            <div class="project-cover-icon"><i class="bi bi-bag-check-fill"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">E-Commerce Platform &amp; Admin</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">Hosted cart platforms could not handle the client’s discount and reward rules, and could not be run on the servers they were required to host on.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">A custom online store built and deployed on the client's own Windows Server rather than a hosted cart, paired with an admin panel and a shopping app for customers.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Catalog, cart and checkout on the web plus a React Native app sharing the same order API</li>
+                                <li>Discount and reward points calculated server-side at checkout so totals cannot be altered client-side</li>
+                                <li>Deployed and configured on Windows Server with SQL Server, including IIS setup and scheduled backups</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-cart-fill"></i> Retail e-commerce</div>
+                                <div><i class="bi bi-box-seam"></i> Storefront + Admin + Mobile app</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React.js</span>
+                                <span class="badge bg-light text-slate border border-light">React Native</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. React Native Apps -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="mobile">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover cover-success">
+                            <span class="project-cover-tag">Cross-Platform</span>
+                            <span class="project-cover-year">2024 &ndash; 2026</span>
+                            <div class="project-cover-icon"><i class="bi bi-phone-fill"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">React Native Mobile Apps</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">Maintaining separate Android and iOS apps doubled the cost and delivery time of every single feature, and the two versions kept falling out of step.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">Android and iOS apps built from a single React Native codebase, talking to the same Node.js backends that power the web portals so data never drifts between them.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>One codebase producing both Android and iOS release builds from the same source</li>
+                                <li>Camera, background location, push notifications and local storage wired through native modules</li>
+                                <li>Local cache with queued writes, so actions taken offline replay correctly once the device reconnects</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-phone"></i> Cross-platform mobile</div>
+                                <div><i class="bi bi-box-seam"></i> Android + iOS from one codebase</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React Native</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. EMI Finance App & Web -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="mobile">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover">
+                            <span class="project-cover-tag">Finance App &amp; Web</span>
+                            <span class="project-cover-year">2024 &ndash; 2026</span>
+                            <div class="project-cover-icon"><i class="bi bi-cash-coin"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">EMI Finance App &amp; Web Portal</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">Collection agents recorded instalments on paper, so the office saw payments days late and had no reliable record when a customer disputed one.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">A field-collection finance system: agents record instalment collections on the mobile app, and the back office sees the same status update on the web console immediately.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Amortisation schedule generated per loan, with part-payments recalculating the remaining tenure</li>
+                                <li>Field collections captured on mobile and reconciled against the ledger on the web console</li>
+                                <li>Every status change stamped with user and timestamp, so disputed collections can be traced</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-wallet2"></i> Lending &amp; collections</div>
+                                <div><i class="bi bi-box-seam"></i> Mobile app + Web console</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React.js</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Ride-Hailing Portal -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="mobile">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover cover-accent">
+                            <span class="project-cover-tag">Live Tracking</span>
+                            <span class="project-cover-year">2024 &ndash; 2026</span>
+                            <div class="project-cover-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">Ride-Hailing Passenger &amp; Driver Portal</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">Bookings were taken over the phone with no live view of where vehicles were, and fares were agreed verbally &mdash; which led to arguments at drop-off.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">A booking platform with separate passenger and driver experiences sharing one live trip engine, from fare quote through pickup, tracking and trip close.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Driver coordinates streamed over sockets and throttled server-side to keep the map smooth</li>
+                                <li>Fare computed on the server from route distance and elapsed time, never trusted from the client</li>
+                                <li>Trip lifecycle as explicit states, so a dropped connection resumes instead of losing the ride</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-truck"></i> Mobility &amp; logistics</div>
+                                <div><i class="bi bi-box-seam"></i> Passenger + Driver + Admin</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React.js</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">MongoDB</span>
+                                <span class="badge bg-light text-slate border border-light">Maps API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Landing Pages & Business Portal -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="web">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover cover-warm">
+                            <span class="project-cover-tag">Landing &amp; Portal</span>
+                            <span class="project-cover-year">2024 &ndash; 2026</span>
+                            <div class="project-cover-icon"><i class="bi bi-window-stack"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">Landing Pages &amp; Business Portal</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">The company had no web presence that converted, and the enquiries that did arrive came by phone with nothing recorded for the sales team to follow up.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">Marketing landing pages and a corporate business portal &mdash; fast, hand-coded pages that load quickly and hand qualified enquiries straight to the sales team.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Hand-coded responsive landing pages built for conversion and speed</li>
+                                <li>Service and product catalog presentation modules</li>
+                                <li>Customer pipeline views feeding the internal sales team</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-megaphone-fill"></i> Corporate &amp; marketing</div>
+                                <div><i class="bi bi-box-seam"></i> Landing pages + Business portal</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">HTML5</span>
+                                <span class="badge bg-light text-slate border border-light">CSS3</span>
+                                <span class="badge bg-light text-slate border border-light">Bootstrap 5</span>
+                                <span class="badge bg-light text-slate border border-light">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Tournaments Arena -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="web">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover cover-success">
+                            <span class="project-cover-tag">MERN Stack</span>
+                            <span class="project-cover-year">2023 &ndash; 2024</span>
+                            <div class="project-cover-icon"><i class="bi bi-trophy-fill"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">Tournaments Arena</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">Organisers built teams and fixtures by hand before every event. It took hours, and the matchups came out unbalanced often enough to cause complaints.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">A game tournament platform that takes registered players, shuffles them into balanced teams and runs the whole bracket automatically without an organiser drawing fixtures by hand.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Automated team shuffle and bracket matchmaking logic</li>
+                                <li>Event registration and fixture scheduling for organisers</li>
+                                <li>Responsive client layouts designed and shipped end to end</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-controller"></i> Gaming &amp; events</div>
+                                <div><i class="bi bi-box-seam"></i> Web platform + Organiser panel</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React.js</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">Express</span>
+                                <span class="badge bg-light text-slate border border-light">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13. Brand Agency UI -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="web">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover">
+                            <span class="project-cover-tag">Front-End UI</span>
+                            <span class="project-cover-year">2021 &ndash; 2022</span>
+                            <div class="project-cover-icon"><i class="bi bi-palette-fill"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">Brand Agency UI Layouts</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">The agency could show clients static design files, but nothing a client could actually click through and feel during a pitch.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">Front-end delivery inside a brand agency &mdash; turning designer files into responsive, pitch-ready interfaces their clients could click through before any backend existed.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Responsive layouts coded directly from agency design files</li>
+                                <li>Proof-of-concept mockups used in live client pitches</li>
+                                <li>Client-facing UI dashboards built on Bootstrap styling tokens</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-brush-fill"></i> Brand &amp; marketing</div>
+                                <div><i class="bi bi-box-seam"></i> Responsive UI + Client dashboards</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">HTML5</span>
+                                <span class="badge bg-light text-slate border border-light">CSS3</span>
+                                <span class="badge bg-light text-slate border border-light">Bootstrap</span>
+                                <span class="badge bg-light text-slate border border-light">jQuery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14. Custom Websites & Apps -->
+                <div class="col-lg-4 col-md-6 portfolio-item-card" data-category="web">
+                    <div class="rounded-card p-0 overflow-hidden h-100 d-flex flex-column">
+                        <div class="project-cover cover-accent">
+                            <span class="project-cover-tag">Built To Your Idea</span>
+                            <span class="project-cover-year">Ongoing</span>
+                            <div class="project-cover-icon"><i class="bi bi-lightbulb-fill"></i></div>
+                        </div>
+                        <div class="p-4 d-flex flex-column flex-grow-1">
+                            <h3 class="h5 mb-3">Custom Websites &amp; Apps</h3>
+                            <div class="ps-block">
+                                <span class="ps-label problem">Problem</span>
+                                <p class="small text-gray mb-0">Off-the-shelf templates force a business to change how it works in order to fit the software, instead of the other way round.</p>
+                            </div>
+                            <div class="ps-block">
+                                <span class="ps-label solution">Solution</span>
+                                <p class="small text-gray mb-2">Work that starts from your idea rather than a template &mdash; you describe what the business needs to do, and I design the screens, the data model and the app around it.</p>
+                            </div>
+                                                        <ul class="project-points">
+                                <li>Built to your workflow, not forced into a ready-made theme</li>
+                                <li>Website, admin panel and mobile app delivered as one connected system</li>
+                                <li>Existing sites and apps redesigned, extended or rebuilt</li>
+                            </ul>
+                            <div class="project-meta border-top border-light pt-3 mb-3">
+                                <div><i class="bi bi-lightbulb"></i> Built to your idea</div>
+                                <div><i class="bi bi-box-seam"></i> Website + Admin + Mobile app</div>
+                            </div>
+                            <div class="mt-auto d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-slate border border-light">React.js</span>
+                                <span class="badge bg-light text-slate border border-light">React Native</span>
+                                <span class="badge bg-light text-slate border border-light">Node.js</span>
+                                <span class="badge bg-light text-slate border border-light">MongoDB</span>
+                                <span class="badge bg-light text-slate border border-light">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Bring To A Project -->
+    <section class="py-100 bg-light-section">
+        <div class="container">
+            <div class="text-center mb-5 max-width-600 mx-auto animate-on-scroll">
+                <span class="text-primary fw-semibold uppercase tracking-wider d-block mb-2">Across These Projects</span>
+                <h2 class="h1 fw-bold mb-3">The Work I Repeat Well</h2>
+                <p class="text-gray">Patterns that show up again and again in the systems above &mdash; and what you get when you hire me for the same.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md primary mb-3"><i class="bi bi-diagram-3-fill"></i></div>
+                        <h3 class="h6 mb-2">Multi-Step Workflows</h3>
+                        <p class="small text-gray mb-0">Approval chains, trip states and collection stages &mdash; business logic modelled so it stays correct as rules change.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md accent mb-3"><i class="bi bi-speedometer2"></i></div>
+                        <h3 class="h6 mb-2">Admin Dashboards</h3>
+                        <p class="small text-gray mb-0">Analytics, monitoring and audit views that give the back office the full picture without slow queries.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md success mb-3"><i class="bi bi-database-fill-gear"></i></div>
+                        <h3 class="h6 mb-2">MongoDB & SQL Server</h3>
+                        <p class="small text-gray mb-0">Comfortable in both document and relational models, including schema design and query tuning.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 animate-on-scroll">
+                    <div class="rounded-card h-100">
+                        <div class="icon-box-md primary mb-3"><i class="bi bi-shield-lock-fill"></i></div>
+                        <h3 class="h6 mb-2">Roles & Secure Access</h3>
+                        <p class="small text-gray mb-0">Permission matrices, authorization channels and tenant isolation built in from the first sprint.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="py-100">
+        <div class="container">
+            <div class="rounded-card text-center py-5 px-4 animate-on-scroll">
+                <h2 class="h1 fw-bold text-slate mb-3">Have an idea? I will turn it into reality.</h2>
+                <p class="text-gray max-width-600 mx-auto mb-4">A website, a mobile app, or a full custom system built around how your business actually works. Send me your idea and I will reply within 24 hours with a scope breakdown, a realistic timeline and a fixed quote.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="contact.html" class="btn btn-premium">Start A Project</a>
+                    <a href="pricing.html" class="btn btn-outline-premium">View Pricing Plans</a>
+                    <a href="https://www.upwork.com/freelancers/~010cbae54f7f3a4a92" target="_blank" rel="noopener" class="btn btn-outline-premium"><i class="bi bi-briefcase-fill me-2"></i>Hire On Upwork</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Row -->
+    <footer class="py-5 bg-light border-top border-light mt-auto">
+        <div class="container">
+            <div class="row g-4 justify-content-between text-center text-md-start">
+                <div class="col-lg-4 col-12">
+                    <div class="footer-logo d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3">
+                        <div class="brand-logo fw-bold">N</div>
+                        <span class="brand-name">Naveen.Dev</span>
+                    </div>
+                    <p class="small text-muted mb-3">Full stack development for businesses that need software built properly &mdash; MERN stack web apps, React Native mobile apps, admin dashboards and custom business systems.</p>
+                    <div class="mb-3">
+                        <span class="availability-pill"><span class="availability-dot"></span> Available for freelance projects</span>
+                    </div>
+                    <div class="profile-stack mb-3">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>SQL Server</span>
+                        <span>React Native</span>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-2">
+                        <a href="https://www.upwork.com/freelancers/~010cbae54f7f3a4a92" target="_blank" rel="noopener" class="footer-social-icon" title="Hire me on Upwork" aria-label="Upwork"><i class="bi bi-briefcase-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/naveen-kumar-a76729263" target="_blank" rel="noopener" class="footer-social-icon" title="LinkedIn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://wa.me/917601880138" target="_blank" rel="noopener" class="footer-social-icon" title="WhatsApp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:naveenkumar.coder@gmail.com" class="footer-social-icon" title="Email" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h5 class="h6 mb-3">My Services</h5>
+                    <a href="web-development.html" class="footer-link small">Web Development</a>
+                    <a href="mobile-development.html" class="footer-link small">Mobile App Development</a>
+                    <a href="custom-software.html" class="footer-link small">Custom Software ERP/CRM</a>
+                    <a href="ui-ux.html" class="footer-link small">UI/UX Interface Design</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h5 class="h6 mb-3">Quick Directory</h5>
+                    <a href="about.html" class="footer-link small">About Company Story</a>
+                    <a href="portfolio.html" class="footer-link small">Project Portfolio Cases</a>
+                    <a href="pricing.html" class="footer-link small">Quotation Pricing Plans</a>
+                    <a href="faq.html" class="footer-link small">Common Questions FAQ</a>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5 class="h6 mb-3">Support Contacts</h5>
+                    <p class="small text-muted mb-1"><i class="bi bi-envelope-fill me-2"></i>naveenkumar.coder@gmail.com</p>
+                    <p class="small text-muted mb-1"><i class="bi bi-telephone-fill me-2"></i>+91 76018 80138</p>
+                    <p class="small text-muted mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Coimbatore, India</p>
+                </div>
+            </div>
+            <hr class="border-light my-4">
+            <div class="text-center text-muted small">
+                &copy; 2026 Naveen Kumar K &middot; Full Stack Developer, Coimbatore, India &middot; Hand-coded, no page builders.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top-btn" title="Back to Top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- Bootstrap Bundle with Popper JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script defer src="script.js"></script>
+</body>
+</html>

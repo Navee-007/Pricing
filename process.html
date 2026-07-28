@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Development Process | Naveen Kumar K</title>
+    <meta name="description" content="Read Naveen Kumar K' 7-step developmental process: planning, designing, coding, testing, and deploying custom software.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563EB'/%3E%3Ctext x='50' y='70' font-family='Outfit,Arial,sans-serif' font-size='58' font-weight='700' fill='white' text-anchor='middle'%3EN.%3C/text%3E%3C/svg%3E">
+    <!-- Link preview for WhatsApp, LinkedIn and Upwork proposals -->
+    <!-- TODO: replace SITE_URL with your live domain once the site is hosted -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Development Process | Naveen Kumar K">
+    <meta property="og:description" content="Read Naveen Kumar K' 7-step developmental process: planning, designing, coding, testing, and deploying custom software.">
+    <meta property="og:image" content="SITE_URL/hero_tech.png">
+    <meta property="og:site_name" content="Naveen.Dev - Naveen Kumar K">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Development Process | Naveen Kumar K">
+    <meta name="twitter:description" content="Read Naveen Kumar K' 7-step developmental process: planning, designing, coding, testing, and deploying custom software.">
+    <meta name="author" content="Naveen Kumar K">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Page Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="spinner-custom"></div>
+    </div>
+
+    <!-- Navigation Bar with Mega Menu -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <div class="brand-logo fw-bold">N</div>
+                <span class="brand-name">Naveen.Dev</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1 gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown dropdown-mega">
+                        <a class="nav-link dropdown-toggle active" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu dropdown-mega-menu border-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Core Capabilities</div>
+                                    <a class="mega-menu-link" href="web-development.html"><i class="bi bi-laptop"></i> <div><strong>Web Development</strong><br><small class="text-muted">Business websites & e-commerce</small></div></a>
+                                    <a class="mega-menu-link" href="mobile-development.html"><i class="bi bi-phone"></i> <div><strong>Mobile Apps</strong><br><small class="text-muted">iOS, Android & cross-platform</small></div></a>
+                                    <a class="mega-menu-link" href="custom-software.html"><i class="bi bi-gear-fill"></i> <div><strong>Custom Software</strong><br><small class="text-muted">Tailored ERP, CRM & cloud logic</small></div></a>
+                                    <a class="mega-menu-link" href="ui-ux.html"><i class="bi bi-palette-fill"></i> <div><strong>UI/UX Design</strong><br><small class="text-muted">Wireframes, user flows & prototyping</small></div></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Software Systems</div>
+                                    <a class="mega-menu-link" href="custom-software.html#erp"><i class="bi bi-building"></i> <div><strong>Enterprise ERP</strong><br><small class="text-muted">Resource and logistics tracking</small></div></a>
+                                    <a class="mega-menu-link" href="custom-software.html#crm"><i class="bi bi-people-fill"></i> <div><strong>Sales CRM Software</strong><br><small class="text-muted">Manage relationships & lead pipelines</small></div></a>
+                                    <a class="mega-menu-link" href="services.html#saas"><i class="bi bi-cloud-check-fill"></i> <div><strong>SaaS Cloud Platforms</strong><br><small class="text-muted">Modern cloud multi-tenant systems</small></div></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="mega-menu-col-title">Frameworks & Info</div>
+                                    <a class="mega-menu-link" href="technologies.html"><i class="bi bi-database-fill-gear"></i> <div><strong>Technologies Stack</strong><br><small class="text-muted">My core engineering capability</small></div></a>
+                                    <a class="mega-menu-link" href="process.html"><i class="bi bi-rocket-takeoff-fill"></i> <div><strong>Development Process</strong><br><small class="text-muted">Roadmap from planning to deploy</small></div></a>
+                                    <a class="mega-menu-link" href="faq.html"><i class="bi bi-question-circle-fill"></i> <div><strong>Pre-Project FAQ</strong><br><small class="text-muted">Answers regarding budget and support</small></div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="contact.html" class="btn btn-premium btn-premium-sm">Get A Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Subpage Header -->
+    <header class="py-5 mt-5 bg-light border-bottom border-light">
+        <div class="container py-lg-4 text-center">
+            <span class="badge badge-soft-primary mb-2 px-3 py-2 rounded-pill uppercase tracking-wider">My Pipeline</span>
+            <h1 class="display-5 fw-extrabold text-slate mb-3">The Development Process</h1>
+            <p class="text-gray lead max-width-600 mx-auto mb-0">How I structure communication and milestones, guiding your software project from plan outlines to production release.</p>
+        </div>
+    </header>
+
+    <!-- Step Timeline Section -->
+    <section class="py-100">
+        <div class="container">
+            <div class="process-timeline">
+                
+                <!-- Step 1 -->
+                <div class="process-item animate-on-scroll">
+                    <div class="process-dot">1</div>
+                    <div class="process-content">
+                        <h4 class="h5 text-slate mb-2">Requirement Gathering</h4>
+                        <p class="small text-muted mb-0">We agree in writing what the system must do, who uses it, and what each screen produces &mdash; before any code is written. This is where most project overruns are prevented.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-item animate-on-scroll">
+                    <div class="process-dot">2</div>
+                    <div class="process-content">
+                        <h4 class="h5 text-slate mb-2">Research & Feasibility</h4>
+                        <p class="small text-muted mb-0">Choosing the database (MongoDB or SQL Server) based on how your data actually relates, then checking third-party APIs, load expectations and anything that could block delivery later.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-item animate-on-scroll">
+                    <div class="process-dot">3</div>
+                    <div class="process-content">
+                        <h4 class="h5 text-slate mb-2">UI/UX Design Systems</h4>
+                        <p class="small text-muted mb-0">Formulating Figma wireframes and prototype screens showcasing light premium aesthetics, rounded card models, and custom color variables.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-item animate-on-scroll">
+                    <div class="process-dot">4</div>
+                    <div class="process-content">
+                        <h4 class="h5 text-slate mb-2">Software Development</h4>
+                        <p class="small text-muted mb-0">Building the React front end and the Node.js/Express API together, with the database schema designed first so the data model does not have to be rewritten mid-project.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="process-item animate-on-scroll">
+                    <div class="process-dot">5</div>
+                    <div class="process-content">
+                        <h4 class="h5 text-slate mb-2">Quality & Layout Testing</h4>
+                        <p class="small text-muted mb-0">Testing on real phones, tablets and desktop widths, plus checking the business logic itself &mdash; permissions, edge cases and what happens when a user does the wrong thing.</p>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="process-item animate-on-scroll">
+                    <div class="process-dot">6</div>
+                    <div class="process-content">
+                        <h4 class="h5 text-slate mb-2">Cloud Deployment</h4>
+                        <p class="small text-muted mb-0">Deploying the app and database to your server or cloud host with SSL, environment configuration and backups in place. I have deployed to both Linux cloud hosts and Windows Server with SQL Server.</p>
+                    </div>
+                </div>
+
+                <!-- Step 7 -->
+                <div class="process-item animate-on-scroll">
+                    <div class="process-dot">7</div>
+                    <div class="process-content">
+                        <h4 class="h5 text-slate mb-2">Post-Launch Support</h4>
+                        <p class="small text-muted mb-0">Continuous monitoring, bug-tracking registries, page speed optimizations, and periodic styling checks.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Row -->
+    <footer class="py-5 bg-light border-top border-light mt-auto">
+        <div class="container">
+            <div class="row g-4 justify-content-between text-center text-md-start">
+                <div class="col-lg-4 col-12">
+                    <div class="footer-logo d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-3">
+                        <div class="brand-logo fw-bold">N</div>
+                        <span class="brand-name">Naveen.Dev</span>
+                    </div>
+                    <p class="small text-muted mb-3">Full stack development for businesses that need software built properly &mdash; MERN stack web apps, React Native mobile apps, admin dashboards and custom business systems.</p>
+                    <div class="mb-3">
+                        <span class="availability-pill"><span class="availability-dot"></span> Available for freelance projects</span>
+                    </div>
+                    <div class="profile-stack mb-3">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>SQL Server</span>
+                        <span>React Native</span>
+                    </div>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-2">
+                        <a href="https://www.upwork.com/freelancers/~010cbae54f7f3a4a92" target="_blank" rel="noopener" class="footer-social-icon" title="Hire me on Upwork" aria-label="Upwork"><i class="bi bi-briefcase-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/naveen-kumar-a76729263" target="_blank" rel="noopener" class="footer-social-icon" title="LinkedIn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://wa.me/917601880138" target="_blank" rel="noopener" class="footer-social-icon" title="WhatsApp" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:naveenkumar.coder@gmail.com" class="footer-social-icon" title="Email" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h5 class="h6 mb-3">My Services</h5>
+                    <a href="web-development.html" class="footer-link small">Web Development</a>
+                    <a href="mobile-development.html" class="footer-link small">Mobile App Development</a>
+                    <a href="custom-software.html" class="footer-link small">Custom Software ERP/CRM</a>
+                    <a href="ui-ux.html" class="footer-link small">UI/UX Interface Design</a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <h5 class="h6 mb-3">Quick Directory</h5>
+                    <a href="about.html" class="footer-link small">About Company Story</a>
+                    <a href="portfolio.html" class="footer-link small">Project Portfolio Cases</a>
+                    <a href="pricing.html" class="footer-link small">Quotation Pricing Plans</a>
+                    <a href="faq.html" class="footer-link small">Common Questions FAQ</a>
+                </div>
+                <div class="col-lg-2 col-12">
+                    <h5 class="h6 mb-3">Support Contacts</h5>
+                    <p class="small text-muted mb-1"><i class="bi bi-envelope-fill me-2"></i>naveenkumar.coder@gmail.com</p>
+                    <p class="small text-muted mb-1"><i class="bi bi-telephone-fill me-2"></i>+91 76018 80138</p>
+                    <p class="small text-muted mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Coimbatore, India</p>
+                </div>
+            </div>
+            <hr class="border-light my-4">
+            <div class="text-center text-muted small">
+                &copy; 2026 Naveen Kumar K &middot; Full Stack Developer, Coimbatore, India &middot; Hand-coded, no page builders.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top-btn" title="Back to Top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- Bootstrap Bundle with Popper JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script defer src="script.js"></script>
+</body>
+</html>
